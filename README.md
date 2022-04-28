@@ -6,12 +6,13 @@ The features of the app
 * store the list in local storage
 
 ## Run the app 
-   * ```json
-     git clone https://github.com/moath143/new-todo-list.git
-   * ```  
-     npm i
-   * ```
-     npm start
-     ```
+* ```
+    git clone https://github.com/moath143/new-todo-list.git
+* ```
+    npm i
+* ```
+    npm start
+  ```
+
 
 
