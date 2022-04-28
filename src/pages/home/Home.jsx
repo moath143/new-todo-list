@@ -31,7 +31,7 @@ class Home extends Component {
     this.setState({
       value: e.target.value,
     });
-      localStorage.setItem("data", JSON.stringify(this.state));
+    //   localStorage.setItem("data", JSON.stringify(this.state));
   };
 
   handleChecked = (id) => {
@@ -43,7 +43,7 @@ class Home extends Component {
         };
       }),
     });
-      localStorage.setItem("data", JSON.stringify(this.state));
+    //   localStorage.setItem("data", JSON.stringify(this.state));
   };
 
   handleAdd = () => {
@@ -57,14 +57,14 @@ class Home extends Component {
       ],
       value: "",
     });
-      localStorage.setItem("data", JSON.stringify(this.state));
+    //   localStorage.setItem("data", JSON.stringify(this.state));
   };
 
   handleDelete = (id) => {
     this.setState({
       items: this.state.items.filter((item) => item.id !== id),
     });
-      localStorage.setItem("data", JSON.stringify(this.state));
+    //   localStorage.setItem("data", JSON.stringify(this.state));
   };
 
   render() {

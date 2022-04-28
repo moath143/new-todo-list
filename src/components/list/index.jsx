@@ -7,16 +7,32 @@ const index = (props) => {
     const data = JSON.parse(getData)
     const dataList = data.items.map((item) => {
         return (
-                <Item
-                  checkedType={props.handleChecked}
-                  title={item.title}
-                  key={item.id}
-                  id={item.id}
-                  handleDelete={props.handleDelete}
-                  checked={props.checked}
-                />
-              )})
-  return <ul>{dataList}</ul>;
-}
+            <Item
+                checkedType={props.handleChecked}
+                title={item.title}
+                key={item.id}
+                id={item.id}
+                handleDelete={props.handleDelete}
+                checked={props.checked}
+            />
+        )
+    })
+    return (
+        <ul>
+            {props.items.map((item) => {
+                return (
+                  <Item
+                    checkedType={props.handleChecked}
+                    title={item.title}
+                    key={item.id}
+                    id={item.id}
+                    handleDelete={props.handleDelete}
+                    checked={props.checked}
+                  />
+                );
+            })}
+        </ul>
+    )
+    }
 
 export default index
