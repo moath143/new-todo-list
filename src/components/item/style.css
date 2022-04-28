@@ -1,0 +1,82 @@
+.app .list ul li{
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+
+.app .list ul li label{
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.app .list ul li label input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.app .list ul li p{
+    flex: 2;
+}
+
+.app .list ul li label .checkmark{
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    height: 25px;
+    width: 25px;
+    background-color: #FF4C6A;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+
+}
+
+.app .list ul li label:hover input ~ .checkmark {
+  background-color: rgb(85, 85, 85);
+}
+
+.app .list ul li label input:checked ~ .checkmark {
+  background-color: #FF4C6A;
+}
+
+.app .list ul li label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.app .list ul li label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.app .list ul li label .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.app .list ul li .icon .fa-xmark{
+    color: #DC3545;
+    cursor: pointer;
+}
+
+
+.app .list ul li p.checked{
+  color: rgb(85, 85, 85);
+}

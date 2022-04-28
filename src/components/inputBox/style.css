@@ -1,0 +1,35 @@
+.app .input-box{
+    width: 100%;
+    display: flex;
+}
+
+.app .input-box input{
+    width: 75%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.app .input-box input::placeholder{
+    color: rgb(85, 85, 85);
+}
+
+.app .input-box button{
+    width: 25%;
+    padding: 10px;
+    border: none;
+    background: #FF4C6A;
+    color: #111;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.app .input-box .isDisable{
+    background: rgb(85, 85, 85);
+}
